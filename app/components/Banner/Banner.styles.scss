@@ -1,0 +1,80 @@
+body {
+  --orbit-width: 250px
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    --orbit-width: 200px
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    --orbit-width: 150px
+  }
+}
+
+.rune-orange {
+  animation: 6s linear infinite orbit1;
+}
+
+.rune-purple {
+  animation: 6s linear infinite orbit2;
+}
+
+.rune-blue {
+  animation: 6s linear infinite orbit3;
+}
+
+.rune-green {
+  animation: 6s linear infinite orbit4;
+}
+
+.rune-yellow {
+  animation: 5s linear infinite orbit5;
+}
+
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-width)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-width)) rotate(-360deg);
+  }
+}
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(72deg) translateX(var(--orbit-width)) rotate(-11deg);
+  }
+  to {
+    transform: rotate(432deg) translateX(var(--orbit-width)) rotate(-371deg);
+  }
+}
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(144deg) translateX(var(--orbit-width)) rotate(-140deg);
+  }
+  to {
+    transform: rotate(504deg) translateX(var(--orbit-width)) rotate(-500deg);
+  }
+}
+
+@keyframes orbit4 {
+  from {
+    transform: rotate(216deg) translateX(var(--orbit-width)) rotate(-6deg);
+  }
+  to {
+    transform: rotate(576deg) translateX(var(--orbit-width)) rotate(-366deg);
+  }
+}
+
+@keyframes orbit5 {
+  from {
+    transform: rotate(280deg) translateX(var(--orbit-width)) rotate(84deg);
+  }
+  to {
+    transform: rotate(640deg) translateX(var(--orbit-width)) rotate(-276deg);
+  }
+}
